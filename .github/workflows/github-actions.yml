@@ -4,7 +4,7 @@ run-name: ${{ github.actor }} is releasing a new Docker image
 on:
   push:
     branches: ['main', 'v1']
-  tags: ['*']
+    tags: ['*']
 
 env:
   REGISTRY: ghcr.io
