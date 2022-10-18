@@ -2,8 +2,9 @@ name: Create and publish Docker Image
 run-name: ${{ github.actor }} is releasing a new Docker image
 
 on:
-  release:
-    branches: ['published']
+  push:
+    branches: ['main', 'v1']
+  tags: ['*']
 
 env:
   REGISTRY: ghcr.io
